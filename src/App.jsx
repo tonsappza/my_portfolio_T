@@ -7,11 +7,14 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <>
-      <div style={{ height: '100vh', backgroundColor: '#FFCCCC' }}>
+      <div>
         <Navbar />
+      </div>
+      <div className='LayoutOutlet'>
+        <Outlet />
       </div>
     </>
   )
 }
 
-export default App
+export default App;
