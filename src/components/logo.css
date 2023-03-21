@@ -1,0 +1,12 @@
+.logoNav {
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #1B1569, #6A56BA);
+    color: #FFF;
+    height: 45px;
+    padding-left: 18px;
+    position: relative;
+}

@@ -1,6 +1,7 @@
 import { Menu } from 'antd';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "./logo.css"
 const Navbar = () => {
     const navigate = useNavigate();
     const onMenuClick = async (event, record) => {
@@ -19,13 +20,14 @@ const Navbar = () => {
     return (
         <>
             <Menu
-                style={{ backgroundColor: '#BEBEBE', color: 'white', fontSize: 16, }}
+                className='navbar'
                 mode={'horizontal'}
                 items={[
                     {
                         label: "My Portfolio",
                         key: "portfolio",
-                        style: { backgroundColor: '#BEBEBE', fontWeight: 'bold' },
+                        className: "logoNav",
+                        // style: { fontWeight: 'bold' },
                         onClick: (e) => onMenuClick(e),
                     },
                     {

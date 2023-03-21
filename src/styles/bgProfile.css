@@ -5,13 +5,14 @@
 }
 
 .Bg-Profile {
-    position: relative;
+    position: fixed;
     width: 100vw;
-    height: 94.6vh;
+    height: 100%;
     top: 0;
     left: 0;
     background: #20262e;
     overflow: hidden;
+    z-index: -1;
 }
 
 .Bg-Profile span {

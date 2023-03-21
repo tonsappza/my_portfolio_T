@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+  font-family: 'Itim', cursive;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
-
+  font-family: 'Itim', cursive;
 
   color-scheme: light dark;
   color: dark;
-  background-color: #f0f2f3;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,56 +21,223 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.Card-Profile {
+  position: absolute;
+  width: 70%;
+  margin-left: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: auto;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-body {
-  margin: 0;
+.Card-Info {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  word-wrap: break-word;
+  top: 50%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  border-color: unset;
+}
+
+.ImgProfile {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 400px;
+  margin-left: -10%;
+  margin-right: 0%;
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: unset;
+}
+
+.Text-Profile {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.col__image {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.cardImage {
+  width: auto;
+  background-color: unset;
+  border: unset;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@media only screen and (max-width: 1024px) {
+  .Card-Profile {
+    position: relative;
+    transform: none;
+    top: 10px;
+    left: unset;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .ImgProfile {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    margin-left: -10%;
+    margin-right: 0%;
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+  }
+
+  .Card-Info {
+    width: 100%;
+    height: 100%;
+    margin-left: -18%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    word-wrap: break-word;
+    top: 20%;
+    left: 38%;
+    transform: translate(-20%, -20%);
+    border-color: unset;
+
+  }
+
+  .Text-Profile {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media only screen and (max-width: 768px) {
+  .Card-Profile {
+    position: relative;
+    transform: none;
+    top: unset;
+    left: unset;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
-  a:hover {
-    color: #747bff;
+
+  .ImgProfile {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .Card-Info {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    word-wrap: break-word;
+    top: 10px;
+    left: unset;
+    transform: unset;
+    border-color: unset;
   }
-} */
+
+  .Text-Profile {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .Card-Profile {
+    position: relative;
+    transform: none;
+    top: unset;
+    left: unset;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .ImgProfile {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+  }
+
+  .Card-Info {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    word-wrap: break-word;
+    top: 10px;
+    left: unset;
+    transform: unset;
+    border-color: unset;
+  }
+
+  .Text-Profile {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
