@@ -1,8 +1,10 @@
 const MYContact = () => {
     return (
         <>
-            <div>
-                Page MYContact
+            <div className="TextLoad">
+                Waiting
+            </div>
+            <div className="loader">
             </div>
         </>
     )

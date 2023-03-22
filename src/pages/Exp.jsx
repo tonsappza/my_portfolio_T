@@ -2,7 +2,7 @@ const Experience = () => {
     return (
         <>
             <div className="TextLoad">
-                Loading
+                Waiting
             </div>
             <div className="loader">
             </div>
