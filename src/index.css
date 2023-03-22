@@ -50,6 +50,7 @@
   left: 34%;
   transform: translate(-50%, -50%);
   border-color: unset;
+
 }
 
 .ImgProfile {
@@ -137,7 +138,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 480px) and (max-width: 768px) {
   .Card-Profile {
     position: relative;
     transform: none;
@@ -240,4 +241,10 @@
     font-size: 16px;
     font-weight: bold;
   }
+}
+
+.Error404 {
+  background-color: darkgrey;
+  padding: 2%;
+  margin: 20%;
 }

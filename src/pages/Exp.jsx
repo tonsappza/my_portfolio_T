@@ -1,9 +1,12 @@
 const Experience = () => {
     return (
         <>
-            <div>
-                Page Experience
+            <div className="TextLoad">
+                Loading
             </div>
+            <div className="loader">
+            </div>
+
         </>
     )
 }

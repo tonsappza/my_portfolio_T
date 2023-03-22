@@ -3,9 +3,12 @@ import "./spinner.css";
 
 export default function LoadingSpinner() {
     return (
+        <>
 
-        <div className="loader">
-        </div>
 
+            <div className="loader">
+            </div>
+        </>
     );
 }
+

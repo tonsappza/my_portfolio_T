@@ -10,12 +10,15 @@
   border: 1px solid rgba(163, 214, 233, 0.25);
 } */
 
-
-
 .loader {
-  width: 140px;
-  height: 52px;
-  background: #3656F4;
+  position: fixed;
+  left: 45.5%;
+  text-align: center;
+  top: 50%;
+  transform: translate(0%, 0%);
+  width: 200px;
+  height: 62px;
+  background: #E52B50;
   border-radius: 100px;
   --c: radial-gradient(farthest-side, #000 92%, #0000);
   --s: 36px 36px;
@@ -27,10 +30,10 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   -webkit-mask-repeat: no-repeat;
-  animation: cu1 1.5s infinite;
+  animation: loads 1.5s infinite;
 }
 
-@keyframes cu1 {
+@keyframes loads {
   0% {
     -webkit-mask-size: 0 0, 0 0, 0 0, auto
   }
@@ -57,5 +60,47 @@
 
   100% {
     -webkit-mask-size: 0 0, 0 0, 0 0, auto
+  }
+}
+
+.TextLoad {
+  position: fixed;
+  left: 45.5%;
+  text-align: center;
+  top: 38%;
+  transform: translate(0%, 0%);
+  width: 200px;
+  height: 62px;
+  color: #FFBF00;
+  animation: TextShake 10s ease 0s infinite normal forwards;
+  font-size: 60px;
+}
+
+@keyframes TextShake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
   }
 }

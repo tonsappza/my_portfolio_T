@@ -1,6 +1,8 @@
-import { Card, Col, Row, Image } from "antd";
+import { Card, Col, Row, Image, Divider } from "antd";
 import "../styles/bgProfile.css";
 import ImgP from "../assets/images/ImgProfile.jpg";
+import { IoCall, IoAccessibility, IoCalendar, IoHourglass, IoRibbon, IoSchool, } from "react-icons/io5";
+import { MailOutlined, } from "@ant-design/icons"
 const Profile = () => {
     return (
         <>
@@ -38,25 +40,25 @@ const Profile = () => {
                     <Col lg={12} md={24} xs={24}>
                         <Card className="Card-Info">
                             <div className="Text-Profile">
-                                Name : Pongsapak Sapprasert
+                                <IoAccessibility /> Name : Pongsapak Sapprasert
                             </div>
                             <div className="Text-Profile">
-                                Age : 24
+                                < IoHourglass /> Age : 24
                             </div>
                             <div className="Text-Profile">
-                                Date of birth : 02/10/1998
+                                <IoCalendar /> Date of birth : 02/10/1998
                             </div>
                             <div className="Text-Profile">
-                                Graduated : Chandrakasem Rajabhat University
+                                <IoSchool /> Graduated : Chandrakasem Rajabhat University
                             </div>
                             <div className="Text-Profile">
-                                Major : Information Technology
+                                <IoRibbon /> Major : Information Technology
                             </div>
                             <div className="Text-Profile">
-                                E-mail : tonpongsapak.02102541@gmail.com
+                                <MailOutlined /> E-mail : tonpongsapak.02102541@gmail.com
                             </div>
                             <div className="Text-Profile">
-                                Phone number : 096-898-7514
+                                <IoCall /> Phone number : 096-898-7514
                             </div>
 
                         </Card>

@@ -7,6 +7,7 @@ const PageSkill = React.lazy(() => import("../pages/Skill"));
 const PageExp = React.lazy(() => import("../pages/Exp"));
 const PageContactMe = React.lazy(() => import("../pages/ContactMe"));
 const PageNotFound = React.lazy(() => import("../pages/page404"));
+const Loadings = React.lazy(() => import("../components/Loading"));
 const router = createBrowserRouter([
     {
         path: "/",
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     },
     {
         path: "*",
+        element: <Loadings />,
+    },
+    {
+        path: "loading",
         element: <PageNotFound />,
     },
 ])
