@@ -104,3 +104,101 @@
     transform: translateX(-8px);
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .loader {
+    position: fixed;
+    left: 25%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0%, 0%);
+    width: 200px;
+    height: 62px;
+    background: #E52B50;
+    border-radius: 100px;
+    --c: radial-gradient(farthest-side, #000 92%, #0000);
+    --s: 36px 36px;
+    -webkit-mask:
+      var(--c) left 8px top 50%,
+      var(--c) center,
+      var(--c) right 8px top 50%,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    -webkit-mask-repeat: no-repeat;
+    animation: loads 1.5s infinite;
+  }
+  
+  @keyframes loads {
+    0% {
+      -webkit-mask-size: 0 0, 0 0, 0 0, auto
+    }
+  
+    16.67% {
+      -webkit-mask-size: var(--s), 0 0, 0 0, auto
+    }
+  
+    33.33% {
+      -webkit-mask-size: var(--s), var(--s), 0 0, auto
+    }
+  
+    50% {
+      -webkit-mask-size: var(--s), var(--s), var(--s), auto
+    }
+  
+    66.67% {
+      -webkit-mask-size: 0 0, var(--s), var(--s), auto
+    }
+  
+    83.33% {
+      -webkit-mask-size: 0 0, 0 0, var(--s), auto
+    }
+  
+    100% {
+      -webkit-mask-size: 0 0, 0 0, 0 0, auto
+    }
+  }
+  
+  .TextLoad {
+    position: fixed;
+    left: 25%;
+    text-align: center;
+    top: 36%;
+    transform: translate(0%, 0%);
+    width: 200px;
+    height: 62px;
+    color: #FFBF00;
+    animation: TextShake 10s ease 0s infinite normal forwards;
+    font-size: 60px;
+  }
+  
+  @keyframes TextShake {
+  
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+  
+    80% {
+      transform: translateX(8px);
+    }
+  
+    90% {
+      transform: translateX(-8px);
+    }
+  }
+
+}
