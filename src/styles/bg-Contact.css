@@ -17,16 +17,10 @@
     align-items: center;
 }
 
-/* .CardLine {
-    width: 100%;
-    position: relative;
-    background-color: #f5f6f7ee;
-    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
-    box-sizing: border-box;
-    top: 0;
-    left: 18%;
-    margin-top: 0px;
-} */
+.btn-copy {
+    margin-left: 25%;
+    width: 100px;
+}
 
 .BtnSend {
     background-color: #0e47e4;
@@ -185,6 +179,17 @@
         max-height: 200px;
         display: flex;
         margin-top: 20px;
+    }
+
+    .Space-copy {
+        float: right;
+    }
+
+    .btn-copy {
+        margin-top: 12%;
+        margin-left: 85%;
+        margin-right: 85%;
+
     }
 
 }
